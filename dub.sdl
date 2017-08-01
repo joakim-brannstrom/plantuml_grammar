@@ -1,0 +1,6 @@
+name "plantuml-grammar"
+description "Grammar for PlantUML diagrams"
+authors "Joakim Brännström"
+copyright "Copyright © 2017, Joakim Brännström"
+license "BSL-1.0"
+dependency "pegged" version="~>0.4.2"
