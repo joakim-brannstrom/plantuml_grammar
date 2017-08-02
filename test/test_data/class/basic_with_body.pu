@@ -1,0 +1,22 @@
+@startuml
+class A {}
+class A { }
+class A { junk}
+class A {
+    junk
+}
+
+class A {
+    class B
+        junk
+}
+class A {
+        junk
+    class B
+}
+
+class A {
+    class B {
+    }
+}
+@enduml

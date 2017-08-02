@@ -1,0 +1,8 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"pegged": "0.4.2",
+		"plantuml_grammar": {"path":".."},
+		"unit-threaded": "0.7.28"
+	}
+}

@@ -1,0 +1,24 @@
+name "test-plantuml_grammar"
+description "Test of Grammar for PlantUML diagrams"
+authors "Joakim Brännström"
+copyright "Copyright © 2017, Joakim Brännström"
+license "BSL-1.0"
+
+targetPath "build"
+
+configuration "application" {
+    dependency "plantuml_grammar" version="~master" path=".."
+
+    targetType "executable"
+
+    sourceFiles "integration_test/main.d"
+}
+
+configuration "unittest" {
+    dependency "unit-threaded" version="~>0.7.28"
+
+    targetType "executable"
+    targetName "test_runner"
+
+    sourceFiles "integration_test/test_runner.d" "integration_test/test.d"
+}

@@ -1,6 +1,30 @@
-name "plantuml-grammar"
+name "plantuml_grammar"
 description "Grammar for PlantUML diagrams"
 authors "Joakim Brännström"
 copyright "Copyright © 2017, Joakim Brännström"
 license "BSL-1.0"
+
 dependency "pegged" version="~>0.4.2"
+
+targetPath "build"
+
+configuration "library" {
+    targetType "library"
+    excludedSourceFiles "source/plantuml_grammar_generator/*.d"
+}
+
+configuration "generate" {
+    targetType "executable"
+    excludedSourceFiles "source/plantuml_grammar/*.d"
+    sourcePaths "source/plantuml_grammar_generator"
+    stringImportPaths "source/plantuml_grammar_generator"
+}
+
+// redirect testing which is primarily integration testing
+configuration "unittest" {
+    targetType "executable"
+
+    excludedSourceFiles "source/*/*d"
+    sourceFiles "test/redirect.d"
+    importPaths "test"
+}
