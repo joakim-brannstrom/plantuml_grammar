@@ -1,4 +1,4 @@
-# plantuml_grammar
+# plantuml_grammar [![Build Status](https://travis-ci.org/joakim-brannstrom/plantuml_grammar.svg?branch=master)](https://travis-ci.org/joakim-brannstrom/plantuml_grammar)
 
 **plantuml_grammar** is a library providing the grammar for
 [PlantUML](http://plantuml.com/) via
