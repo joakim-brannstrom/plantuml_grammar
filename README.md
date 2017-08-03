@@ -9,6 +9,11 @@ Currently only the most trivial class diagrams are supported.
 # Getting Started
 
 To use plantuml_grammar via dub add this to your dub.json:
+```json
+"dependencies": {
+"plantuml_grammar": "~>0.0.1"
+}
+```
 
 # Rebuild the Grammar
 
