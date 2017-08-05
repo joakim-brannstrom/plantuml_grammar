@@ -14,7 +14,7 @@ PlantUML_ClassDiagram:
     InheritRight    <  RelateIdFrom :('-'+ "|>") RelateIdTo
     InheritLeft     <  RelateIdTo :("<|" '-'+) RelateIdFrom
 
-    RelateIdFrom    <- identifier
-    RelateIdTo      <- identifier
+    RelateIdFrom    <- ClassName
+    RelateIdTo      <- ClassName
 
     Comment         <- space* :'\'' ~((!eol .)*) :eol
